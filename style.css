@@ -38,3 +38,14 @@ button {
 button:hover {
   filter: brightness(90%);
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
