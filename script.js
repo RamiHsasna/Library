@@ -34,4 +34,19 @@ class Library {
     return this.books.some((book) => book.title === newBook.title);
   }
 }
-const Library = new Library();
+const library = new Library();
+
+// User Interface
+
+const addBookBtn = document.getElementById("addBookBtn");
+const addBookModal = document.getElementById("addBookModal");
+const overlay = document.getElementById("overlay");
+
+const openAddBookModal = () => {
+  addBookForm.reset();
+  addBookModal.classList.add("active");
+  overlay.classList.add("active");
+};
+
+addBookBtn.onclick = openAddBookModal;
+overlay.onclick = closeAllModals;

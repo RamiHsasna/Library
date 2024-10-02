@@ -11,7 +11,7 @@
     <div class="header">
       <h1>Library Project</h1>
     </div>
-    <button id="createBook">+ Add a book</button>
+    <button class="btn btn-add" id="addBookBtn">+ Add a book</button>
     <footer class="footer">
       <p>
         Copyright ©
@@ -24,8 +24,9 @@
         <i class="fab fa-github"></i>
       </a>
     </footer>
-    <div class="modal hidden" id="addBookModal">
+    <div class="modal" id="addBookModal">
       <form class="add-book-form" id="addBookForm">
+        <h3>Add new book</h3>
         <input
           class="input"
           type="text"
@@ -60,8 +61,6 @@
         <button class="btn btn-light-green" type="submit">Submit</button>
       </form>
     </div>
-    <div class="overlay hidden" id="overlay"></div>
-    <!-- <div class="overlay hidden"></div>
-    <button class="btn btn-add">+ Add book</button> -->
+    <div class="overlay" id="overlay"></div>
   </body>
 </html>
